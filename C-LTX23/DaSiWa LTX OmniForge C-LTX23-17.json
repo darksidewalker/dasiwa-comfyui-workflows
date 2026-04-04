@@ -1099,6 +1099,141 @@
       "bgcolor": "#353"
     },
     {
+      "id": 2208,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3690,
+        4670
+      ],
+      "size": [
+        390,
+        230
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "Post-processing features",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "P[0-9]{2}#",
+        "showNav": false,
+        "showAllGraphs": true,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 2203,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3690,
+        4500
+      ],
+      "size": [
+        390,
+        160
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Extra features",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "F[0-9]{2}#",
+        "showNav": false,
+        "showAllGraphs": true,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 2201,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3690,
+        3990
+      ],
+      "size": [
+        390,
+        130
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "Type switch",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "T[0-9]{2}#",
+        "showNav": false,
+        "showAllGraphs": true,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "always one"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2505,
+      "type": "MarkdownNote",
+      "pos": [
+        2550,
+        3630
+      ],
+      "size": [
+        420,
+        780
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [Comfyui-WhiteRabbit](https://github.com/Artificial-Sweetener/comfyui-WhiteRabbit)\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n- [LTX LoRAs](https://github.com/Lightricks/LTX-2) (optional)\n- [Nvidia_RTX_Nodes_ComfyUI](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI)\n---\n\n## Features\n\n- 🎥 **I2V, FLF2V, T2V, V2V** + Audio\n- 🤝 **Video resolution matching** - Fully automatic scaling\n- ⚙️ **Chunking** (Seconds/Frame based)\n- 🎞️ **LTX Latent Upscaler** (2x native latent)\n- 📚 **Prompt Enhancer** - Automatic prompt refinement\n- 🪫 **Low VRAM optimizations** \n<br>\n- ✨ **Multiple Resolution Upscalers**\n  - Torchlanc (very fast, color correct, low VRAM) \n  - Upscale with Model (additional detail, high quality)\n  - RTX Super Resolution** (ultra fast, very accurate)\n<br>\n- 🔗 **VAE options**\n  - Full VAE\n  - Tiled VAE\n<br>\n- 🔊 **Multiple Audio options**\n  - Text to Audio (Model audio)\n  - Input audio file\n  - Video audio\n<br>\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color match** feature\n- 👾 **MiniMeme** feature - Create small gif's\n- 🃏 **Last Frame Extraction**\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- Added DaSiWa Nodes\n- Added Scheduler options\n- Added Triton enhancement\n- Another v2v sound fix\n- Added steps option"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 2277,
       "type": "aa38cc33-a5ab-48e3-a127-8390fb2f717f",
       "pos": [
@@ -1487,141 +1622,6 @@
       "widgets_values": [],
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 2208,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        3690,
-        4670
-      ],
-      "size": [
-        390,
-        230
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 22,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": []
-        }
-      ],
-      "title": "Post-processing features",
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "P[0-9]{2}#",
-        "showNav": false,
-        "showAllGraphs": true,
-        "sort": "alphanumeric",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 2203,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        3690,
-        4500
-      ],
-      "size": [
-        390,
-        160
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Extra features",
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "F[0-9]{2}#",
-        "showNav": false,
-        "showAllGraphs": true,
-        "sort": "alphanumeric",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 2201,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        3690,
-        3990
-      ],
-      "size": [
-        390,
-        130
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 24,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": []
-        }
-      ],
-      "title": "Type switch",
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "T[0-9]{2}#",
-        "showNav": false,
-        "showAllGraphs": true,
-        "sort": "alphanumeric",
-        "customSortAlphabet": "",
-        "toggleRestriction": "always one"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2505,
-      "type": "MarkdownNote",
-      "pos": [
-        2550,
-        3630
-      ],
-      "size": [
-        420,
-        780
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 25,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [Comfyui-WhiteRabbit](https://github.com/Artificial-Sweetener/comfyui-WhiteRabbit)\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n- [LTX LoRAs](https://github.com/Lightricks/LTX-2) (optional)\n- [Nvidia_RTX_Nodes_ComfyUI](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI)\n---\n\n## Features\n\n- 🎥 **I2V, FLF2V, T2V, V2V** + Audio\n- 🤝 **Video resolution matching** - Fully automatic scaling\n- ⚙️ **Chunking** (Seconds/Frame based)\n- 🎞️ **LTX Latent Upscaler** (2x native latent)\n- 📚 **Prompt Enhancer** - Automatic prompt refinement\n- 🪫 **Low VRAM optimizations** \n<br>\n- ✨ **Multiple Resolution Upscalers**\n  - Torchlanc (very fast, color correct, low VRAM) \n  - Upscale with Model (additional detail, high quality)\n  - RTX Super Resolution** (ultra fast, very accurate)\n<br>\n- 🔗 **VAE options**\n  - Full VAE\n  - Tiled VAE\n<br>\n- 🔊 **Multiple Audio options**\n  - Text to Audio (Model audio)\n  - Input audio file\n  - Video audio\n<br>\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color match** feature\n- 👾 **MiniMeme** feature - Create small gif's\n- 🃏 **Last Frame Extraction**\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- Added DaSiWa Nodes\n- Added Scheduler options\n- Added Triton enhancement\n- Another v2v sound fix\n- Added steps option"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -6848,7 +6848,7 @@
               "Node name for S&R": "PrimitiveInt"
             },
             "widgets_values": [
-              0,
+              5,
               "fixed"
             ]
           },
@@ -21133,10 +21133,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 1.4195495285714321,
+      "scale": 1.173181428571432,
       "offset": [
-        -1954.7477314965524,
-        -4000.9025751716244
+        -3563.8854631391814,
+        -3568.572302219497
       ]
     }
   },
