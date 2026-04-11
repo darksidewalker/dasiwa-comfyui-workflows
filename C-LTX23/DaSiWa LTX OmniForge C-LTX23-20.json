@@ -1080,6 +1080,133 @@
       "bgcolor": "#353"
     },
     {
+      "id": 2203,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3690,
+        4530
+      ],
+      "size": [
+        390,
+        160
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Extra features",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "F[0-9]{2}#",
+        "showNav": false,
+        "showAllGraphs": true,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 2196,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        6470,
+        3650
+      ],
+      "size": [
+        610,
+        310
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 4625
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 4626
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 4624
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": [
+            4464,
+            4465,
+            4466
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d"
+      },
+      "widgets_values": {
+        "frame_rate": 8,
+        "loop_count": 0,
+        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%-LTX23",
+        "format": "video/h265-mp4",
+        "pix_fmt": "yuv420p10le",
+        "crf": 20,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "204336-LTX23_00001-audio.webm",
+            "subfolder": "video/2026-04-11",
+            "type": "output",
+            "format": "video/av1-webm",
+            "frame_rate": 16,
+            "workflow": "204336-LTX23_00001.png",
+            "fullpath": "/home/darksidewalker/GitHub/ComfyUI/output/video/2026-04-11/204336-LTX23_00001-audio.webm"
+          }
+        }
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 2505,
       "type": "MarkdownNote",
       "pos": [
@@ -1093,7 +1220,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1492,133 +1619,6 @@
         ]
       },
       "widgets_values": [],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 2196,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        6470,
-        3650
-      ],
-      "size": [
-        610,
-        310
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 4625
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": 4626
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 4624
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": [
-            4464,
-            4465,
-            4466
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "3234937ff5f3ca19068aaba5042771514de2429d"
-      },
-      "widgets_values": {
-        "frame_rate": 8,
-        "loop_count": 0,
-        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%-LTX23",
-        "format": "video/h265-mp4",
-        "pix_fmt": "yuv420p10le",
-        "crf": 20,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "204336-LTX23_00001-audio.webm",
-            "subfolder": "video/2026-04-11",
-            "type": "output",
-            "format": "video/av1-webm",
-            "frame_rate": 16,
-            "workflow": "204336-LTX23_00001.png",
-            "fullpath": "/home/darksidewalker/GitHub/ComfyUI/output/video/2026-04-11/204336-LTX23_00001-audio.webm"
-          }
-        }
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 2203,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        3690,
-        4530
-      ],
-      "size": [
-        390,
-        160
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Extra features",
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "F[0-9]{2}#",
-        "showNav": false,
-        "showAllGraphs": true,
-        "sort": "alphanumeric",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      },
       "color": "#233",
       "bgcolor": "#355"
     }
@@ -16079,7 +16079,7 @@
               "Node name for S&R": "PrimitiveFloat"
             },
             "widgets_values": [
-              16
+              24
             ]
           },
           {
@@ -21777,10 +21777,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.7148374140727582,
+      "scale": 0.7863211554800342,
       "offset": [
-        -2634.4766360777894,
-        -3377.9072422474405
+        -2846.15059943814,
+        -3511.126586990821
       ]
     }
   },
