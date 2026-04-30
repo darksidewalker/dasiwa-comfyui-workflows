@@ -1419,6 +1419,32 @@
       "bgcolor": "#355"
     },
     {
+      "id": 20,
+      "type": "MarkdownNote",
+      "pos": [
+        -3130,
+        480
+      ],
+      "size": [
+        510,
+        750
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 33,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [Comfyui-WhiteRabbit](https://github.com/Artificial-Sweetener/comfyui-WhiteRabbit) <br>+ *packaging, torchlanc*\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use) \n- [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ComfyUI-LTXVideo](https://github.com/Lightricks/ComfyUI-LTXVideo)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Nvidia_RTX_Nodes_ComfyUI](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI)\n---\n\n## Features\n\n- 🖼️ **I2V and FLF2V** + Audio\n- 🧩 **Automatic aspect‑ratio calculation and fitting**\n- ✨ **Multiple Upscalers**\n  - **Torchlanc** (very fast, color correct, low VRAM) \n  - **Upscale with Model** (additional detail, high quality)\n  - **RTX Super Resolution** (ultra fast, very accurate) <br>\n- 🤝 **Video resolution matching** - Fully automatic scaling and resolution calculations\n- 🕠 **Length automation** - Fully automatic calculation of frame count\n- 🔊 **Add audio** with LTX23 & CozyVoice\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color match** feature\n- 👾 **MiniMeme** feature - Create small gif's\n- 🎭 **NAG** - Negative prompting with CFG1\n- 🪄 **Interpolation** feature\n- 🌀 **Perfect loop** feature\n- 🃏 **Last Frame Extraction**\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- Added DaSiWa Nodes\n- NAG for everything\n- Chunking\n- LTX23 for V2V Audio\n- Many feature enhancements\n- More native nodes\n- Interpolation with safetensors and recent model\n- Removed video combine for now (comfyui bug)\n- Removed WAN S2V, Hunyuan, MMAudio\n- Added Upscaler switches back\n- PromptEnhancer wire fixed"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 1512,
       "type": "e0940f57-80b2-480e-8a38-36968dc1763d",
       "pos": [
@@ -1427,7 +1453,7 @@
       ],
       "size": [
         540,
-        1570
+        1560
       ],
       "flags": {
         "collapsed": false
@@ -1693,6 +1719,10 @@
             "clip_name1"
           ],
           [
+            "2325",
+            "clip_name2"
+          ],
+          [
             "2375",
             "noise_seed"
           ],
@@ -1722,6 +1752,10 @@
           ],
           [
             "2395",
+            "value"
+          ],
+          [
+            "2361",
             "value"
           ],
           [
@@ -1775,14 +1809,6 @@
           [
             "2079",
             "model_name"
-          ],
-          [
-            "2325",
-            "clip_name2"
-          ],
-          [
-            "2361",
-            "value"
           ]
         ],
         "cnr_id": "comfy-core",
@@ -1791,32 +1817,6 @@
       "widgets_values": [],
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 20,
-      "type": "MarkdownNote",
-      "pos": [
-        -3130,
-        480
-      ],
-      "size": [
-        510,
-        750
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 33,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [Comfyui-WhiteRabbit](https://github.com/Artificial-Sweetener/comfyui-WhiteRabbit) <br>+ *packaging, torchlanc*\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use) \n- [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ComfyUI-LTXVideo](https://github.com/Lightricks/ComfyUI-LTXVideo)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Nvidia_RTX_Nodes_ComfyUI](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI)\n---\n\n## Features\n\n- 🖼️ **I2V and FLF2V** + Audio\n- 🧩 **Automatic aspect‑ratio calculation and fitting**\n- ✨ **Multiple Upscalers**\n  - **Torchlanc** (very fast, color correct, low VRAM) \n  - **Upscale with Model** (additional detail, high quality)\n  - **RTX Super Resolution** (ultra fast, very accurate) <br>\n- 🤝 **Video resolution matching** - Fully automatic scaling and resolution calculations\n- 🕠 **Length automation** - Fully automatic calculation of frame count\n- 🔊 **Add audio** with LTX23 & CozyVoice\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color match** feature\n- 👾 **MiniMeme** feature - Create small gif's\n- 🎭 **NAG** - Negative prompting with CFG1\n- 🪄 **Interpolation** feature\n- 🌀 **Perfect loop** feature\n- 🃏 **Last Frame Extraction**\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- Added DaSiWa Nodes\n- NAG for everything\n- Chunking\n- LTX23 for V2V Audio\n- Many feature enhancements\n- More native nodes\n- Interpolation with safetensors and recent model\n- Removed video combine for now (comfyui bug)\n- Removed WAN S2V, Hunyuan, MMAudio\n- Added Upscaler switches back\n- PromptEnhancer wire fixed"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -13989,62 +13989,6 @@
             ]
           },
           {
-            "id": 2360,
-            "type": "ComfySwitchNode",
-            "pos": [
-              2440,
-              5250
-            ],
-            "size": [
-              270,
-              130
-            ],
-            "flags": {},
-            "order": 172,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "on_false",
-                "name": "on_false",
-                "type": "STRING",
-                "link": 4831
-              },
-              {
-                "localized_name": "on_true",
-                "name": "on_true",
-                "type": "*",
-                "link": 4811
-              },
-              {
-                "localized_name": "switch",
-                "name": "switch",
-                "type": "BOOLEAN",
-                "widget": {
-                  "name": "switch"
-                },
-                "link": 4812
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "output",
-                "name": "output",
-                "type": "STRING",
-                "links": [
-                  4813,
-                  4970
-                ]
-              }
-            ],
-            "title": "prompt enhancer switch",
-            "properties": {
-              "Node name for S&R": "ComfySwitchNode"
-            },
-            "widgets_values": [
-              false
-            ]
-          },
-          {
             "id": 2239,
             "type": "FrameInterpolationModelLoader",
             "pos": [
@@ -14183,6 +14127,62 @@
               "Node name for S&R": "VHS_GetImageCount"
             },
             "widgets_values": {}
+          },
+          {
+            "id": 2360,
+            "type": "ComfySwitchNode",
+            "pos": [
+              2430,
+              5260
+            ],
+            "size": [
+              270,
+              130
+            ],
+            "flags": {},
+            "order": 172,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "on_false",
+                "name": "on_false",
+                "type": "STRING",
+                "link": 4831
+              },
+              {
+                "localized_name": "on_true",
+                "name": "on_true",
+                "type": "*",
+                "link": 4811
+              },
+              {
+                "localized_name": "switch",
+                "name": "switch",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "switch"
+                },
+                "link": 4812
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "output",
+                "name": "output",
+                "type": "STRING",
+                "links": [
+                  4813,
+                  4970
+                ]
+              }
+            ],
+            "title": "prompt enhancer switch",
+            "properties": {
+              "Node name for S&R": "ComfySwitchNode"
+            },
+            "widgets_values": [
+              false
+            ]
           }
         ],
         "groups": [
@@ -17452,10 +17452,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.6314169549121345,
+      "scale": 0.6314169549121348,
       "offset": [
-        1473.4055543625532,
-        -235.20217623884244
+        1701.1821330518114,
+        -452.5829051049127
       ]
     }
   },
