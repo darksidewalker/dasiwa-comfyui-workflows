@@ -844,69 +844,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 2197,
-      "type": "LoadImage",
-      "pos": [
-        4870,
-        3630
-      ],
-      "size": [
-        570,
-        640
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "First Frame Image",
-          "name": "image",
-          "type": "COMBO",
-          "widget": {
-            "name": "image"
-          },
-          "link": null
-        },
-        {
-          "label": "choose 1st frame to upload",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            4620
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": []
-        }
-      ],
-      "title": "First-Frame-Image",
-      "properties": {
-        "Node name for S&R": "LoadImage",
-        "cnr_id": "comfy-core",
-        "ver": "0.3.67"
-      },
-      "widgets_values": [
-        "grafik (17).png",
-        "image"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 2641,
       "type": "PrimitiveStringMultiline",
       "pos": [
@@ -918,7 +855,7 @@
         490
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1309,7 +1246,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1320,6 +1257,69 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 2197,
+      "type": "LoadImage",
+      "pos": [
+        4870,
+        3630
+      ],
+      "size": [
+        570,
+        640
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "First Frame Image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "label": "choose 1st frame to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4620
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "First-Frame-Image",
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.67"
+      },
+      "widgets_values": [
+        "example.png",
+        "image"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -16929,8 +16929,8 @@
     "ds": {
       "scale": 0.5967995116023855,
       "offset": [
-        -1847.278400186235,
-        -3284.5139948341666
+        -2384.1529369079703,
+        -3283.8077482721096
       ]
     }
   },
