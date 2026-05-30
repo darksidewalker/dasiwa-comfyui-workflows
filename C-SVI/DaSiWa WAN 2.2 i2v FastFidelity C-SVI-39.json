@@ -7047,6 +7047,30 @@
       "bgcolor": "#353"
     },
     {
+      "id": 372,
+      "type": "MarkdownNote",
+      "pos": [
+        3320,
+        280
+      ],
+      "size": [
+        420,
+        630
+      ],
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [Comfyui-WhiteRabbit](https://github.com/Artificial-Sweetener/comfyui-WhiteRabbit) <br>+ *packaging, torchlanc*\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-Frame-Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation) \n- [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n---\n\n## Features\n\n- 🖼️ **SVI** (SVI 2.0 up to 10 samplers)\n- 🧩 **Automatic aspect‑ratio calculation and fitting**\n- ✨ **Ultra‑fast, color‑correct upscaling**   (torchlanc) OR **Upscale with Model**\n- 🤝 **Video resolution matching** - Fully automatic scaling and resolution calculations\n- 🕠 **Length automation** - Fully automatic calculation of frame count\n- 🫥 **Watermark** support\n- 🪄 **Interpolation** feature\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Changes / Fixes\n- Added native color transfer\n- Added DaSiWa RTX Upscaler & Refiner"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 146,
       "type": "165a787d-9aff-412b-89f9-ac1036f6344d",
       "pos": [
@@ -7335,30 +7359,6 @@
         "ver": "0.7.0"
       },
       "widgets_values": []
-    },
-    {
-      "id": 372,
-      "type": "MarkdownNote",
-      "pos": [
-        3320,
-        280
-      ],
-      "size": [
-        420,
-        630
-      ],
-      "flags": {},
-      "order": 47,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [Comfyui-WhiteRabbit](https://github.com/Artificial-Sweetener/comfyui-WhiteRabbit) <br>+ *packaging, torchlanc*\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-Frame-Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation) \n- [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n---\n\n## Features\n\n- 🖼️ **SVI** (SVI 2.0 up to 10 samplers)\n- 🧩 **Automatic aspect‑ratio calculation and fitting**\n- ✨ **Ultra‑fast, color‑correct upscaling**   (torchlanc) OR **Upscale with Model**\n- 🤝 **Video resolution matching** - Fully automatic scaling and resolution calculations\n- 🕠 **Length automation** - Fully automatic calculation of frame count\n- 🫥 **Watermark** support\n- 🪄 **Interpolation** feature\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Changes / Fixes\n- Added native color transfer\n- Added DaSiWa RTX Upscaler & Refiner"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -13840,54 +13840,6 @@
             "bgcolor": "#533"
           },
           {
-            "id": 2464,
-            "type": "ColorTransfer",
-            "pos": [
-              10730,
-              3260
-            ],
-            "size": [
-              270,
-              130
-            ],
-            "flags": {},
-            "order": 75,
-            "mode": 4,
-            "inputs": [
-              {
-                "localized_name": "image_target",
-                "name": "image_target",
-                "type": "IMAGE",
-                "link": 5152
-              },
-              {
-                "localized_name": "image_ref",
-                "name": "image_ref",
-                "type": "IMAGE",
-                "link": 5151
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "image",
-                "name": "image",
-                "type": "IMAGE",
-                "links": [
-                  5150,
-                  5153
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "ColorTransfer"
-            },
-            "widgets_values": [
-              "reinhard_lab",
-              "per_frame",
-              1
-            ]
-          },
-          {
             "id": 2364,
             "type": "DaSiWa_NodeStatusSwitch",
             "pos": [
@@ -14045,6 +13997,54 @@
               false,
               "true → active",
               "bypass"
+            ]
+          },
+          {
+            "id": 2464,
+            "type": "ColorTransfer",
+            "pos": [
+              10730,
+              3260
+            ],
+            "size": [
+              270,
+              130
+            ],
+            "flags": {},
+            "order": 75,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "image_target",
+                "name": "image_target",
+                "type": "IMAGE",
+                "link": 5152
+              },
+              {
+                "localized_name": "image_ref",
+                "name": "image_ref",
+                "type": "IMAGE",
+                "link": 5151
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  5150,
+                  5153
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "ColorTransfer"
+            },
+            "widgets_values": [
+              "reinhard_lab",
+              "per_frame",
+              0.75
             ]
           }
         ],
@@ -27511,10 +27511,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.3804155608146673,
+      "scale": 1.3132976901076845,
       "offset": [
-        -935.0862487032027,
-        435.5564039227362
+        -9908.889415252677,
+        -2878.7512207853983
       ]
     }
   },
