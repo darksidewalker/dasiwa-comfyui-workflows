@@ -4365,85 +4365,6 @@
             ]
           },
           {
-            "id": 2100,
-            "type": "RIFE_VFI_Advanced",
-            "pos": [
-              11640,
-              3950
-            ],
-            "size": [
-              320,
-              300
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 54,
-            "mode": 4,
-            "inputs": [
-              {
-                "localized_name": "frames",
-                "name": "frames",
-                "type": "IMAGE",
-                "link": 4299
-              },
-              {
-                "localized_name": "optional_interpolation_states",
-                "name": "optional_interpolation_states",
-                "shape": 7,
-                "type": "INTERPOLATION_STATES",
-                "link": null
-              },
-              {
-                "localized_name": "multiplier",
-                "name": "multiplier",
-                "type": "INT",
-                "widget": {
-                  "name": "multiplier"
-                },
-                "link": 4300
-              },
-              {
-                "localized_name": "custom_t_list_csv",
-                "name": "custom_t_list_csv",
-                "shape": 7,
-                "type": "STRING",
-                "widget": {
-                  "name": "custom_t_list_csv"
-                },
-                "link": 4301
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": [
-                  4333,
-                  5068
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "RIFE_VFI_Advanced",
-              "cnr_id": "whiterabbit",
-              "ver": "1.1.0"
-            },
-            "widgets_values": [
-              "rife49.pth",
-              2,
-              "linear",
-              1,
-              0,
-              1,
-              1,
-              true,
-              200,
-              ""
-            ]
-          },
-          {
             "id": 1500,
             "type": "UnetLoaderGGUF",
             "pos": [
@@ -7589,60 +7510,6 @@
             ]
           },
           {
-            "id": 2528,
-            "type": "DaSiWa_RTX_UpscalerRefiner",
-            "pos": [
-              14130,
-              3940
-            ],
-            "size": [
-              310,
-              400
-            ],
-            "flags": {},
-            "order": 96,
-            "mode": 4,
-            "inputs": [
-              {
-                "localized_name": "images",
-                "name": "images",
-                "type": "IMAGE",
-                "link": 5391
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "images",
-                "name": "images",
-                "type": "IMAGE",
-                "links": [
-                  5389,
-                  5390
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "DaSiWa_RTX_UpscalerRefiner"
-            },
-            "widgets_values": [
-              false,
-              "Ultra",
-              false,
-              "Ultra",
-              "VSR",
-              "Ultra",
-              "Scale",
-              2,
-              2,
-              1920,
-              1080,
-              "32",
-              "16:9",
-              "Center Crop (Fill)",
-              0
-            ]
-          },
-          {
             "id": 1502,
             "type": "UNETLoader",
             "pos": [
@@ -8059,6 +7926,139 @@
             },
             "widgets_values": [
               "( a - 1 ) / b"
+            ]
+          },
+          {
+            "id": 2100,
+            "type": "RIFE_VFI_Advanced",
+            "pos": [
+              11640,
+              3950
+            ],
+            "size": [
+              320,
+              300
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 54,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "frames",
+                "name": "frames",
+                "type": "IMAGE",
+                "link": 4299
+              },
+              {
+                "localized_name": "optional_interpolation_states",
+                "name": "optional_interpolation_states",
+                "shape": 7,
+                "type": "INTERPOLATION_STATES",
+                "link": null
+              },
+              {
+                "localized_name": "multiplier",
+                "name": "multiplier",
+                "type": "INT",
+                "widget": {
+                  "name": "multiplier"
+                },
+                "link": 4300
+              },
+              {
+                "localized_name": "custom_t_list_csv",
+                "name": "custom_t_list_csv",
+                "shape": 7,
+                "type": "STRING",
+                "widget": {
+                  "name": "custom_t_list_csv"
+                },
+                "link": 4301
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  4333,
+                  5068
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "RIFE_VFI_Advanced",
+              "cnr_id": "whiterabbit",
+              "ver": "1.1.0"
+            },
+            "widgets_values": [
+              "rife49.pth",
+              2,
+              "linear",
+              1,
+              0,
+              1,
+              1,
+              true,
+              200,
+              ""
+            ]
+          },
+          {
+            "id": 2528,
+            "type": "DaSiWa_RTX_UpscalerRefiner",
+            "pos": [
+              14130,
+              3940
+            ],
+            "size": [
+              310,
+              400
+            ],
+            "flags": {},
+            "order": 96,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "images",
+                "name": "images",
+                "type": "IMAGE",
+                "link": 5391
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "images",
+                "name": "images",
+                "type": "IMAGE",
+                "links": [
+                  5389,
+                  5390
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "DaSiWa_RTX_UpscalerRefiner"
+            },
+            "widgets_values": [
+              true,
+              "Ultra",
+              true,
+              "Ultra",
+              "VSR",
+              "Ultra",
+              "Scale",
+              2,
+              2,
+              1920,
+              1080,
+              "32",
+              "16:9",
+              "Center Crop (Fill)",
+              0
             ]
           }
         ],
@@ -9993,10 +9993,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.6949896641865299,
+      "scale": 0.9855143380503475,
       "offset": [
-        1276.8144014242046,
-        -176.5098795744604
+        -12863.38097595557,
+        -3582.954067648363
       ]
     }
   },
