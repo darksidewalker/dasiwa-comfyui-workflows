@@ -201,7 +201,7 @@
       ],
       "size": [
         260,
-        548
+        550
       ],
       "flags": {},
       "order": 16,
@@ -338,7 +338,7 @@
       ],
       "size": [
         580,
-        397
+        400
       ],
       "flags": {},
       "order": 12,
@@ -416,7 +416,7 @@
       ],
       "size": [
         260,
-        548
+        550
       ],
       "flags": {},
       "order": 17,
@@ -639,168 +639,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 2505,
-      "type": "MarkdownNote",
-      "pos": [
-        2550,
-        3630
-      ],
-      "size": [
-        470,
-        550
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n- [LTX LoRAs](https://github.com/Lightricks/LTX-2) (optional)\n---\n\n## Features\n\n- 🎥 **I2V, FLF2V, T2V** + Audio\n- 🤝 **Video resolution matching** - Fully automatic scaling\n- ⚙️ **Chunking** (Seconds/Frame based)\n- 🎞️ **LTX Latent Upscaler** (2x native latent)\n- 🪫 **Low VRAM optimizations** \n<br>\n- ✨ **Multiple Resolution Upscalers**\n<br>\n- 🔗 **VAE options**\n  - Full VAE or Tiled VAE\n<br>\n- 🔊 **Multiple Audio options**\n<br>\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color transfer** feature\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- Overhaul and more DaSiWa Nodes\n- LTX Director\n. Removed V2V for now"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 3314,
-      "type": "LTXDirector",
-      "pos": [
-        4270,
-        3630
-      ],
-      "size": [
-        1000,
-        801
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 7737
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 7736
-        },
-        {
-          "name": "audio_vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": 7378
-        },
-        {
-          "name": "optional_latent",
-          "shape": 7,
-          "type": "LATENT",
-          "link": null
-        },
-        {
-          "name": "custom_width",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "custom_width"
-          },
-          "link": 7537
-        },
-        {
-          "name": "custom_height",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "custom_height"
-          },
-          "link": 7538
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            7669,
-            7674
-          ]
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            7680
-          ]
-        },
-        {
-          "name": "video_latent",
-          "type": "LATENT",
-          "links": [
-            7677
-          ]
-        },
-        {
-          "name": "audio_latent",
-          "type": "LATENT",
-          "links": [
-            7675
-          ]
-        },
-        {
-          "name": "guide_data",
-          "type": "GUIDE_DATA",
-          "links": [
-            7678,
-            7695
-          ]
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "links": [
-            7682,
-            7738
-          ]
-        },
-        {
-          "name": "combined_audio",
-          "type": "AUDIO",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LTXDirector",
-        "cnr_id": "whatdreamscost-comfyui",
-        "ver": "5cae3c00186ff2eb79771070f05a2c4e02f329bb",
-        "aux_id": "kijai/ComfyUI-PromptRelay"
-      },
-      "widgets_values": [
-        "Woman with yellow glowing hair and yellow glowing eyes with mechanical arms and hands. She is holding a knife and squatting over a man's erect penis. D4S1W4_NSFWSME.",
-        144,
-        6,
-        "{\"segments\":[{\"id\":\"17806390769374kp4r\",\"start\":0,\"length\":144,\"prompt\":\"The men pulls his penis out and starts ejaculating massive amounts of white cum on her clothes, white cum lands on her body, clothes and drips down her body. The cum simulates natural liquid flow and precise splashes on her skin. She smiles and enjoys the warm cum on her body.\\nThe men's penis still ejaculating massive amounts of white cum on her clothes, breasts and skin. The white cum clings to her clothes and body, dripping down on her. She smirks giggles and she says \\\"Well done!\\\"\",\"type\":\"image\",\"imageFile\":\"image (3).png\",\"imageB64\":\"/ComfyBackendDirect/api/view?filename=image%20(3).png&type=input&subfolder=\",\"guideStrength\":0.8}],\"audioSegments\":[]}",
-        "The men pulls his penis out and starts ejaculating massive amounts of white cum on her clothes, white cum lands on her body, clothes and drips down her body. The cum simulates natural liquid flow and precise splashes on her skin. She smiles and enjoys the warm cum on her body.\nThe men's penis still ejaculating massive amounts of white cum on her clothes, breasts and skin. The white cum clings to her clothes and body, dripping down on her. She smirks giggles and she says \"Well done!\"",
-        "144",
-        0.001,
-        "0.80",
-        false,
-        24,
-        "seconds",
-        900,
-        0,
-        "maintain aspect ratio",
-        32,
-        18,
-        ""
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 2504,
       "type": "MarkdownNote",
       "pos": [
@@ -814,7 +652,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -838,7 +676,7 @@
         300
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1092,7 +930,7 @@
         630
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1249,6 +1087,168 @@
         "ver": "0.19.3"
       },
       "widgets_values": [],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2505,
+      "type": "MarkdownNote",
+      "pos": [
+        2550,
+        3630
+      ],
+      "size": [
+        470,
+        550
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n- [LTX LoRAs](https://github.com/Lightricks/LTX-2) (optional)\n---\n\n## Features\n\n- 🎥 **I2V, FLF2V, T2V** + Audio\n- 🤝 **Video resolution matching** - Fully automatic scaling\n- ⚙️ **Chunking** (Seconds/Frame based)\n- 🎞️ **LTX Latent Upscaler** (2x native latent)\n- 🪫 **Low VRAM optimizations** \n- ✨ **Multiple Resolution Upscalers**\n- 🔗 **VAE options**\n  - Full VAE or Tiled VAE\n<br>\n- 🔊 **Multiple Audio options**\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color transfer** feature\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- Overhaul and more DaSiWa Nodes\n- LTX Director\n. Removed V2V for now"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3314,
+      "type": "LTXDirector",
+      "pos": [
+        4270,
+        3630
+      ],
+      "size": [
+        1000,
+        855
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 7737
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 7736
+        },
+        {
+          "name": "audio_vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 7378
+        },
+        {
+          "name": "optional_latent",
+          "shape": 7,
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "custom_width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": 7537
+        },
+        {
+          "name": "custom_height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": 7538
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            7669,
+            7674
+          ]
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            7680
+          ]
+        },
+        {
+          "name": "video_latent",
+          "type": "LATENT",
+          "links": [
+            7677
+          ]
+        },
+        {
+          "name": "audio_latent",
+          "type": "LATENT",
+          "links": [
+            7675
+          ]
+        },
+        {
+          "name": "guide_data",
+          "type": "GUIDE_DATA",
+          "links": [
+            7678,
+            7695
+          ]
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "links": [
+            7682,
+            7738
+          ]
+        },
+        {
+          "name": "combined_audio",
+          "type": "AUDIO",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LTXDirector",
+        "cnr_id": "whatdreamscost-comfyui",
+        "ver": "5cae3c00186ff2eb79771070f05a2c4e02f329bb",
+        "aux_id": "kijai/ComfyUI-PromptRelay"
+      },
+      "widgets_values": [
+        "",
+        144,
+        6,
+        "{\"segments\":[],\"audioSegments\":[]}",
+        "",
+        "",
+        0.001,
+        "",
+        false,
+        24,
+        "seconds",
+        900,
+        0,
+        "maintain aspect ratio",
+        32,
+        18,
+        ""
+      ],
       "color": "#2a363b",
       "bgcolor": "#3f5159"
     }
@@ -4462,7 +4462,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -4766,7 +4766,7 @@
             ],
             "size": [
               270,
-              82
+              90
             ],
             "flags": {},
             "order": 14,
@@ -4865,7 +4865,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 1,
+            "order": 2,
             "mode": 4,
             "inputs": [
               {
@@ -6460,7 +6460,7 @@
             ],
             "size": [
               220,
-              394.6666666666667
+              400
             ],
             "flags": {},
             "order": 1,
@@ -7253,7 +7253,7 @@
             ],
             "size": [
               230,
-              408
+              410
             ],
             "flags": {},
             "order": 1,
@@ -8258,10 +8258,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.6433166666666711,
+      "scale": 0.7784131666666723,
       "offset": [
-        -2915.7748720208383,
-        -3359.36642704139
+        -3262.153500399386,
+        -3099.4596340042385
       ]
     }
   },
