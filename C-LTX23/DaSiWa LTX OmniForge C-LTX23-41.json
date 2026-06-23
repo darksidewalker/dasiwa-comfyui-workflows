@@ -750,6 +750,248 @@
       "bgcolor": "#3f5159"
     },
     {
+      "id": 2196,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        6360,
+        3630
+      ],
+      "size": [
+        550,
+        1311.6363636363635
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7995
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 7972
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 8075
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": [
+            4464
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d"
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%-LTX23",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "174813-LTX23_00001-audio.mp4",
+            "subfolder": "video/2026-06-23",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 24,
+            "workflow": "174813-LTX23_00001.png",
+            "fullpath": "/home/darksidewalker/Bilder/ComfyUI/video/2026-06-23/174813-LTX23_00001-audio.mp4"
+          }
+        }
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 2505,
+      "type": "MarkdownNote",
+      "pos": [
+        2550,
+        3630
+      ],
+      "size": [
+        470,
+        550
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n- [LTX LoRAs](https://github.com/Lightricks/LTX-2) (optional)\n---\n\n## Features\n\n- 🎥 **I2V, FLF2V, T2V, V2V** + Audio\n- 🤝 **Video resolution matching** - Fully automatic scaling\n- ⚙️ **Chunking** (Seconds/Frame based)\n- 🎞️ **LTX Latent Upscaler** (2x native latent)\n- 🪫 **Low VRAM optimizations** \n- ✨ **Multiple Resolution Upscalers**\n- 🔗 **VAE options**\n  - Full VAE or Tiled VAE\n<br>\n- 🔊 **Multiple Audio options**\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color transfer** feature\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- LTX Director 2.0\n- 3-Pass option (optimized)\n- Fixed FPS wire"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3676,
+      "type": "3592290c-211c-4422-8399-46a8c4affb49",
+      "pos": [
+        5660,
+        3800
+      ],
+      "size": [
+        330,
+        930
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 7961
+        },
+        {
+          "label": "Audio VAE",
+          "name": "audio_vae",
+          "type": "VAE",
+          "link": 7962
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 8006
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 8007
+        },
+        {
+          "label": "motion_guide_data",
+          "name": "",
+          "type": "*",
+          "link": 8012
+        },
+        {
+          "label": "guide_data",
+          "name": "_1",
+          "type": "*",
+          "link": 8011
+        },
+        {
+          "label": "model",
+          "name": "_2",
+          "type": "*",
+          "link": 7967
+        },
+        {
+          "label": "upscaler_model",
+          "name": "_3",
+          "type": "*",
+          "link": 7968
+        },
+        {
+          "label": "noise",
+          "name": "_4",
+          "type": "*",
+          "link": 8003
+        },
+        {
+          "label": "sampler",
+          "name": "_5",
+          "type": "*",
+          "link": 7984
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "link": 8010
+        },
+        {
+          "label": "video_latent",
+          "name": "latent",
+          "type": "LATENT",
+          "link": 8008
+        },
+        {
+          "name": "audio_latent",
+          "type": "LATENT",
+          "link": 8009
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "IMAGE",
+          "links": [
+            7996
+          ]
+        },
+        {
+          "name": "Audio",
+          "type": "AUDIO",
+          "links": [
+            7972
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [
+          [
+            "3630",
+            "value"
+          ],
+          [
+            "3683",
+            "value"
+          ],
+          [
+            "3684",
+            "value"
+          ]
+        ]
+      },
+      "widgets_values": [],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
       "id": 3319,
       "type": "1680c02f-86b1-4db6-8d55-35f78dce9a59",
       "pos": [
@@ -761,7 +1003,7 @@
         630
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -916,248 +1158,6 @@
       "widgets_values": [],
       "color": "#2a363b",
       "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2196,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        6360,
-        3630
-      ],
-      "size": [
-        550,
-        1311.6363636363635
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 7995
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": 7972
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 8075
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": [
-            4464
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "3234937ff5f3ca19068aaba5042771514de2429d"
-      },
-      "widgets_values": {
-        "frame_rate": 16,
-        "loop_count": 0,
-        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%-LTX23",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "174813-LTX23_00001-audio.mp4",
-            "subfolder": "video/2026-06-23",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 24,
-            "workflow": "174813-LTX23_00001.png",
-            "fullpath": "/home/darksidewalker/Bilder/ComfyUI/video/2026-06-23/174813-LTX23_00001-audio.mp4"
-          }
-        }
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 3676,
-      "type": "3592290c-211c-4422-8399-46a8c4affb49",
-      "pos": [
-        5660,
-        3800
-      ],
-      "size": [
-        330,
-        930
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 7961
-        },
-        {
-          "label": "Audio VAE",
-          "name": "audio_vae",
-          "type": "VAE",
-          "link": 7962
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 8006
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 8007
-        },
-        {
-          "label": "motion_guide_data",
-          "name": "",
-          "type": "*",
-          "link": 8012
-        },
-        {
-          "label": "guide_data",
-          "name": "_1",
-          "type": "*",
-          "link": 8011
-        },
-        {
-          "label": "model",
-          "name": "_2",
-          "type": "*",
-          "link": 7967
-        },
-        {
-          "label": "upscaler_model",
-          "name": "_3",
-          "type": "*",
-          "link": 7968
-        },
-        {
-          "label": "noise",
-          "name": "_4",
-          "type": "*",
-          "link": 8003
-        },
-        {
-          "label": "sampler",
-          "name": "_5",
-          "type": "*",
-          "link": 7984
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "link": 8010
-        },
-        {
-          "label": "video_latent",
-          "name": "latent",
-          "type": "LATENT",
-          "link": 8008
-        },
-        {
-          "name": "audio_latent",
-          "type": "LATENT",
-          "link": 8009
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "IMAGE",
-          "links": [
-            7996
-          ]
-        },
-        {
-          "name": "Audio",
-          "type": "AUDIO",
-          "links": [
-            7972
-          ]
-        }
-      ],
-      "properties": {
-        "proxyWidgets": [
-          [
-            "3630",
-            "value"
-          ],
-          [
-            "3683",
-            "value"
-          ],
-          [
-            "3684",
-            "value"
-          ]
-        ]
-      },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2505,
-      "type": "MarkdownNote",
-      "pos": [
-        2550,
-        3630
-      ],
-      "size": [
-        470,
-        550
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "## Requirements\n- [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)\n- [rgthree-comfy](https://github.com/rgthree/rgthree-comfy)\n- [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI-DaSiWa-Nodes](https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes)\n- [ffmpeg](https://www.ffmpeg.org/)\n- [Sage Attention](https://github.com/thu-ml/SageAttention) (optional)\n- [Upscaler model](https://openmodeldb.info/) (optional)\n- [LTX LoRAs](https://github.com/Lightricks/LTX-2) (optional)\n---\n\n## Features\n\n- 🎥 **I2V, FLF2V, T2V, V2V** + Audio\n- 🤝 **Video resolution matching** - Fully automatic scaling\n- ⚙️ **Chunking** (Seconds/Frame based)\n- 🎞️ **LTX Latent Upscaler** (2x native latent)\n- 🪫 **Low VRAM optimizations** \n- ✨ **Multiple Resolution Upscalers**\n- 🔗 **VAE options**\n  - Full VAE or Tiled VAE\n<br>\n- 🔊 **Multiple Audio options**\n- 🫥 **Watermark** option\n- 📢 **Soundmark** option\n- 🧮 **Color transfer** feature\n- 🔖 **Bookmark-Shortcuts** - with number keys\n\n---\n\n## Latest Changes / Fixes\n- LTX Director 2.0\n- 3-Pass option (optimized)\n- Fixed FPS wire"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -3378,7 +3378,7 @@
             },
             "widgets_values": [
               42,
-              "fixed"
+              "randomize"
             ]
           },
           {
@@ -9304,10 +9304,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.6130340164253049,
+      "scale": 0.6743374180678359,
       "offset": [
-        -3039.239151420629,
-        -2968.106724401233
+        -3802.257574755706,
+        -3167.035755706809
       ]
     }
   },
