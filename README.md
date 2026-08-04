@@ -1,16 +1,28 @@
-# dasiwa-wan2.2-workflows
-Workflow history for reference
+# DaSiWa ComfyUI Workflows
 
-# ⚖️ Disclaimer & Terms of Use
+ComfyUI workflow collection for various video and image generation pipelines.
 
-TL;DR: This is a free community tool. I built it to be helpful, but use it at your own risk.
+## Workflow Categories
 
-"As-Is" Software: This installer is provided without any guarantees. It might work perfectly, or it might need manual tweaking for your specific setup.
+| Folder | Pipeline |
+|--------|----------|
+| C-AiO | All-in-One |
+| C-CA | ControlNet Assist |
+| C-EX | Experimental |
+| C-FLF2V | Frame-to-Video |
+| C-I2V | Image-to-Video |
+| C-LTX2 | Lightricks LTX 2 |
+| C-LTX23 | Lightricks LTX 2.3 |
+| C-MMH3 | MiniMax H3 |
+| C-S2V | Scene-to-Video |
+| C-SVI | Smart Video Interpolation |
+| C-TI2I | Text/Image-to-Image |
+| C-WLTX | Wan + LTX Hybrid |
 
-No Liability: I (the author) am not responsible for any system errors, data loss, or hardware issues that occur while using this script.
+## Notes
 
-Third-Party Content: This script downloads software from external sources (Python, PyTorch, ComfyUI, etc.). Their respective licenses and terms apply to those components.
+Workflows are saved snapshots for reference. Node versions and model paths may need adjustment depending on your setup.
 
-Hardware Responsibility: High-performance tasks like AI generation put stress on your hardware. Ensure your system has adequate cooling and a proper power supply.
+## License
 
-Legal Standard: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+GPL v3 — see LICENSE.
