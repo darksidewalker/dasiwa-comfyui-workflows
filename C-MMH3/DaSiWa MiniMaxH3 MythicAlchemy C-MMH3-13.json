@@ -1,5 +1,5 @@
 {
-  "id": "50a4471b-cc7a-408f-8584-9573271b3b06",
+  "id": "b6c4e832-75b3-42d2-ab35-b13ac67210ad",
   "revision": 0,
   "last_node_id": 2737,
   "last_link_id": 5987,
@@ -385,66 +385,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 2737,
-      "type": "ModelPreviewOverrideKJ",
-      "pos": [
-        140,
-        470
-      ],
-      "size": [
-        650,
-        1510
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 5984
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            5985
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ModelPreviewOverrideKJ"
-      },
-      "widgets_values": [
-        1024,
-        80,
-        true,
-        1,
-        12,
-        "taeh3.safetensors",
-        ""
-      ],
-      "widgets_values_named": {
-        "max_resolution": 1024,
-        "jpeg_quality": 80,
-        "suppress_default_preview": true,
-        "preview_frames": 1,
-        "preview_fps": 12,
-        "tiny_vae": "taeh3.safetensors",
-        "preview": ""
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 2678,
       "type": "DaSiWa_LTX2LoraLoader",
       "pos": [
@@ -501,6 +441,97 @@
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2568,
+      "type": "DaSiWa_EnhancedVideoCombine",
+      "pos": [
+        2180,
+        470
+      ],
+      "size": [
+        610,
+        1250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 5474
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 5761
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 5957
+        }
+      ],
+      "outputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DaSiWa_EnhancedVideoCombine"
+      },
+      "widgets_values": [
+        24,
+        "Auto",
+        "Auto",
+        "Auto",
+        28,
+        "Standard",
+        false,
+        true,
+        "video/%date:yyyy-MM-dd%/%date:hhmmss%",
+        true,
+        false,
+        false,
+        true,
+        "192k",
+        false,
+        false,
+        ""
+      ],
+      "widgets_values_named": {
+        "frame_rate": 24,
+        "codec": "Auto",
+        "container": "Auto",
+        "bit_depth": "Auto",
+        "quality": 28,
+        "log_level": "Standard",
+        "pingpong": false,
+        "save_metadata": true,
+        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%",
+        "save_output": true,
+        "pass_frames": false,
+        "crop_to_audio": false,
+        "audio_codec": true,
+        "audio_bitrate": "192k",
+        "save_first_frame": false,
+        "save_last_frame": false,
+        "video_preview": ""
+      }
     },
     {
       "id": 1512,
@@ -790,7 +821,7 @@
         "#Watermark-Darksidewalker-Emblem.png",
         "image",
         true,
-        true,
+        false,
         "MiniMaxH3/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
         "MiniMaxH3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
         "qwen3vl_32b_minimax_h3_int4_convrot.safetensors",
@@ -813,7 +844,7 @@
         "watermark_path": "#Watermark-Darksidewalker-Emblem.png",
         "upload": "image",
         "enabled": true,
-        "enabled_1": true,
+        "enabled_1": false,
         "unet_name": "MiniMaxH3/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
         "unet_name_1": "MiniMaxH3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
         "clip_name": "qwen3vl_32b_minimax_h3_int4_convrot.safetensors",
@@ -822,97 +853,6 @@
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2568,
-      "type": "DaSiWa_EnhancedVideoCombine",
-      "pos": [
-        2180,
-        470
-      ],
-      "size": [
-        610,
-        1250
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 5474
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": 5761
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 5957
-        }
-      ],
-      "outputs": [
-        {
-          "name": "frames",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "name": "filename",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DaSiWa_EnhancedVideoCombine"
-      },
-      "widgets_values": [
-        24,
-        "Auto",
-        "Auto",
-        "Auto",
-        28,
-        "Standard",
-        false,
-        true,
-        "video/%date:yyyy-MM-dd%/%date:hhmmss%",
-        true,
-        false,
-        false,
-        true,
-        "192k",
-        false,
-        false,
-        ""
-      ],
-      "widgets_values_named": {
-        "frame_rate": 24,
-        "codec": "Auto",
-        "container": "Auto",
-        "bit_depth": "Auto",
-        "quality": 28,
-        "log_level": "Standard",
-        "pingpong": false,
-        "save_metadata": true,
-        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%",
-        "save_output": true,
-        "pass_frames": false,
-        "crop_to_audio": false,
-        "audio_codec": true,
-        "audio_bitrate": "192k",
-        "save_first_frame": false,
-        "save_last_frame": false,
-        "video_preview": ""
-      }
     },
     {
       "id": 2730,
@@ -1019,28 +959,88 @@
         "Node name for S&R": "MiniMaxH3Director"
       },
       "widgets_values": [
-        "I2VA",
+        "FL2VA",
         "",
         1024,
         768,
         5,
         24,
         "match",
-        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
-        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"FL2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the end mark of the target video.\\n\\nintegrated_multimodal_description: \\n\\noverall_soundscape: \\n\\nnon_diegetic_music: N/A\",\"prompt_mode\":\"structured\"},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
+        "{\"version\":2,\"mode\":\"FL2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the end mark of the target video.\\n\\nintegrated_multimodal_description: \\n\\noverall_soundscape: \\n\\nnon_diegetic_music: N/A\",\"prompt_mode\":\"structured\"}",
         ""
       ],
       "widgets_values_named": {
-        "mode": "I2VA",
+        "mode": "FL2VA",
         "prompt": "",
         "width": 1024,
         "height": 768,
         "duration": 5,
         "frame_rate": 24,
         "ref_image_size": "match",
-        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
-        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"FL2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the end mark of the target video.\\n\\nintegrated_multimodal_description: \\n\\noverall_soundscape: \\n\\nnon_diegetic_music: N/A\",\"prompt_mode\":\"structured\"},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
+        "builder_state": "{\"version\":2,\"mode\":\"FL2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the end mark of the target video.\\n\\nintegrated_multimodal_description: \\n\\noverall_soundscape: \\n\\nnon_diegetic_music: N/A\",\"prompt_mode\":\"structured\"}",
         "minimax_h3_director_ui": ""
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2737,
+      "type": "ModelPreviewOverrideKJ",
+      "pos": [
+        140,
+        470
+      ],
+      "size": [
+        650,
+        1510
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 5984
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5985
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelPreviewOverrideKJ"
+      },
+      "widgets_values": [
+        1024,
+        80,
+        true,
+        1,
+        12,
+        "taeh3.safetensors",
+        ""
+      ],
+      "widgets_values_named": {
+        "max_resolution": 1024,
+        "jpeg_quality": 80,
+        "suppress_default_preview": true,
+        "preview_frames": 1,
+        "preview_fps": 12,
+        "tiny_vae": "taeh3.safetensors",
+        "preview": ""
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
@@ -3221,7 +3221,7 @@
             ],
             "flags": {},
             "order": 43,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -3314,12 +3314,12 @@
               "Node name for S&R": "DaSiWa_NodeStatusSwitch"
             },
             "widgets_values": [
-              true,
+              false,
               "true → active",
               "bypass"
             ],
             "widgets_values_named": {
-              "enabled": true,
+              "enabled": false,
               "trigger_on": "true → active",
               "action": "bypass"
             }
@@ -3648,7 +3648,7 @@
             ],
             "flags": {},
             "order": 42,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -5248,10 +5248,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.6672112857142861,
+      "scale": 0.7339324142857148,
       "offset": [
-        841.8525923802129,
-        -263.6106283135014
+        717.8256164448283,
+        -95.03279518012619
       ]
     }
   },
