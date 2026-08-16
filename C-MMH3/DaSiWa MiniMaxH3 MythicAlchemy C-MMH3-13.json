@@ -1,5 +1,5 @@
 {
-  "id": "e5579661-a3a5-4d30-97a8-4970090b54bf",
+  "id": "50a4471b-cc7a-408f-8584-9573271b3b06",
   "revision": 0,
   "last_node_id": 2737,
   "last_link_id": 5987,
@@ -445,97 +445,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 2568,
-      "type": "DaSiWa_EnhancedVideoCombine",
-      "pos": [
-        2180,
-        470
-      ],
-      "size": [
-        610,
-        1242.0833333333335
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 5474
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": 5761
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 5957
-        }
-      ],
-      "outputs": [
-        {
-          "name": "frames",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "name": "filename",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DaSiWa_EnhancedVideoCombine"
-      },
-      "widgets_values": [
-        24,
-        "Auto",
-        "Auto",
-        "Auto",
-        28,
-        "Standard",
-        true,
-        false,
-        "video/%date:yyyy-MM-dd%/%date:hhmmss%",
-        true,
-        false,
-        false,
-        true,
-        "192k",
-        false,
-        false,
-        ""
-      ],
-      "widgets_values_named": {
-        "frame_rate": 24,
-        "codec": "Auto",
-        "container": "Auto",
-        "bit_depth": "Auto",
-        "quality": 28,
-        "log_level": "Standard",
-        "pingpong": true,
-        "save_metadata": false,
-        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%",
-        "save_output": true,
-        "pass_frames": false,
-        "crop_to_audio": false,
-        "audio_codec": true,
-        "audio_bitrate": "192k",
-        "save_first_frame": false,
-        "save_last_frame": false,
-        "video_preview": ""
-      }
-    },
-    {
       "id": 2678,
       "type": "DaSiWa_LTX2LoraLoader",
       "pos": [
@@ -594,137 +503,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 2730,
-      "type": "MiniMaxH3Director",
-      "pos": [
-        800,
-        470
-      ],
-      "size": [
-        1350,
-        1510
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "fl2va_model",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 5958
-        },
-        {
-          "name": "ref2va_model",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 5959
-        },
-        {
-          "name": "external_width_overwrite",
-          "shape": 7,
-          "type": "INT",
-          "link": null
-        },
-        {
-          "name": "external_height_overwrite",
-          "shape": 7,
-          "type": "INT",
-          "link": null
-        },
-        {
-          "name": "external_prompt_overwrite",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "guide",
-          "type": "MINIMAX_H3_DIRECTOR_GUIDE",
-          "links": [
-            5960
-          ]
-        },
-        {
-          "name": "duration",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "positive_prompt",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            5963
-          ]
-        },
-        {
-          "name": "fl2va_requested",
-          "type": "BOOLEAN",
-          "links": [
-            5968
-          ]
-        },
-        {
-          "name": "ref2va_requested",
-          "type": "BOOLEAN",
-          "links": []
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "links": [
-            5962
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "MiniMaxH3Director"
-      },
-      "widgets_values": [
-        "I2VA",
-        "",
-        1024,
-        768,
-        5,
-        24,
-        "match",
-        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
-        "{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
-        ""
-      ],
-      "widgets_values_named": {
-        "mode": "I2VA",
-        "prompt": "",
-        "width": 1024,
-        "height": 768,
-        "duration": 5,
-        "frame_rate": 24,
-        "ref_image_size": "match",
-        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
-        "builder_state": "{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
-        "minimax_h3_director_ui": ""
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 1512,
       "type": "e0940f57-80b2-480e-8a38-36968dc1763d",
       "pos": [
@@ -733,7 +511,7 @@
       ],
       "size": [
         550,
-        654
+        660
       ],
       "flags": {
         "collapsed": false
@@ -1000,7 +778,7 @@
         "res_multistep",
         "simple",
         25,
-        1,
+        616271471367168,
         10,
         5,
         false,
@@ -1012,7 +790,7 @@
         "#Watermark-Darksidewalker-Emblem.png",
         "image",
         true,
-        false,
+        true,
         "MiniMaxH3/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
         "MiniMaxH3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
         "qwen3vl_32b_minimax_h3_int4_convrot.safetensors",
@@ -1023,7 +801,7 @@
         "sampler_name": "res_multistep",
         "scheduler": "simple",
         "steps": 25,
-        "noise_seed": 1,
+        "noise_seed": 616271471367168,
         "shift_video": 10,
         "shift_audio": 5,
         "enabled_2": false,
@@ -1035,12 +813,234 @@
         "watermark_path": "#Watermark-Darksidewalker-Emblem.png",
         "upload": "image",
         "enabled": true,
-        "enabled_1": false,
+        "enabled_1": true,
         "unet_name": "MiniMaxH3/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
         "unet_name_1": "MiniMaxH3/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
         "clip_name": "qwen3vl_32b_minimax_h3_int4_convrot.safetensors",
         "vae_name": "MiniMaxH3/minimax_h3_video_vae_fp16.safetensors",
         "vae_name_1": "MiniMaxH3/minimax_h3_audio_vae_fp32.safetensors"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2568,
+      "type": "DaSiWa_EnhancedVideoCombine",
+      "pos": [
+        2180,
+        470
+      ],
+      "size": [
+        610,
+        1250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 5474
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 5761
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 5957
+        }
+      ],
+      "outputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DaSiWa_EnhancedVideoCombine"
+      },
+      "widgets_values": [
+        24,
+        "Auto",
+        "Auto",
+        "Auto",
+        28,
+        "Standard",
+        false,
+        true,
+        "video/%date:yyyy-MM-dd%/%date:hhmmss%",
+        true,
+        false,
+        false,
+        true,
+        "192k",
+        false,
+        false,
+        ""
+      ],
+      "widgets_values_named": {
+        "frame_rate": 24,
+        "codec": "Auto",
+        "container": "Auto",
+        "bit_depth": "Auto",
+        "quality": 28,
+        "log_level": "Standard",
+        "pingpong": false,
+        "save_metadata": true,
+        "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%",
+        "save_output": true,
+        "pass_frames": false,
+        "crop_to_audio": false,
+        "audio_codec": true,
+        "audio_bitrate": "192k",
+        "save_first_frame": false,
+        "save_last_frame": false,
+        "video_preview": ""
+      }
+    },
+    {
+      "id": 2730,
+      "type": "MiniMaxH3Director",
+      "pos": [
+        800,
+        470
+      ],
+      "size": [
+        1350,
+        1510
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "fl2va_model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 5958
+        },
+        {
+          "name": "ref2va_model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 5959
+        },
+        {
+          "name": "external_width_overwrite",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "external_height_overwrite",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "external_prompt_overwrite",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "guide",
+          "type": "MINIMAX_H3_DIRECTOR_GUIDE",
+          "links": [
+            5960
+          ]
+        },
+        {
+          "name": "duration",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "positive_prompt",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            5963
+          ]
+        },
+        {
+          "name": "fl2va_requested",
+          "type": "BOOLEAN",
+          "links": [
+            5968
+          ]
+        },
+        {
+          "name": "ref2va_requested",
+          "type": "BOOLEAN",
+          "links": []
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "links": [
+            5962
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3Director"
+      },
+      "widgets_values": [
+        "I2VA",
+        "",
+        1024,
+        768,
+        5,
+        24,
+        "match",
+        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
+        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        ""
+      ],
+      "widgets_values_named": {
+        "mode": "I2VA",
+        "prompt": "",
+        "width": 1024,
+        "height": 768,
+        "duration": 5,
+        "frame_rate": 24,
+        "ref_image_size": "match",
+        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
+        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        "minimax_h3_director_ui": ""
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
@@ -1687,7 +1687,7 @@
               126
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -1745,7 +1745,7 @@
               126
             ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -1803,7 +1803,7 @@
               630
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 4,
             "inputs": [
               {
@@ -1895,7 +1895,7 @@
               60
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 4,
             "inputs": [
               {
@@ -1944,7 +1944,7 @@
               50
             ],
             "flags": {},
-            "order": 10,
+            "order": 9,
             "mode": 4,
             "inputs": [
               {
@@ -1987,7 +1987,7 @@
               146
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -2050,7 +2050,7 @@
               330
             ],
             "flags": {},
-            "order": 18,
+            "order": 17,
             "mode": 0,
             "inputs": [
               {
@@ -2117,7 +2117,7 @@
               90
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
               {
@@ -2171,7 +2171,7 @@
               90
             ],
             "flags": {},
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [
               {
@@ -2269,7 +2269,7 @@
               120
             ],
             "flags": {},
-            "order": 15,
+            "order": 14,
             "mode": 0,
             "inputs": [
               {
@@ -2395,7 +2395,7 @@
               70
             ],
             "flags": {},
-            "order": 20,
+            "order": 19,
             "mode": 0,
             "inputs": [
               {
@@ -2487,7 +2487,7 @@
               130
             ],
             "flags": {},
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [
               {
@@ -2751,7 +2751,7 @@
               70
             ],
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
               {
@@ -2971,7 +2971,7 @@
               126
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -3221,7 +3221,7 @@
             ],
             "flags": {},
             "order": 43,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -3314,12 +3314,12 @@
               "Node name for S&R": "DaSiWa_NodeStatusSwitch"
             },
             "widgets_values": [
-              false,
+              true,
               "true → active",
               "bypass"
             ],
             "widgets_values_named": {
-              "enabled": false,
+              "enabled": true,
               "trigger_on": "true → active",
               "action": "bypass"
             }
@@ -3336,7 +3336,7 @@
               420
             ],
             "flags": {},
-            "order": 8,
+            "order": 7,
             "mode": 4,
             "inputs": [
               {
@@ -3409,7 +3409,7 @@
               350
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 4,
             "inputs": [
               {
@@ -3539,7 +3539,7 @@
               60
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -3648,7 +3648,7 @@
             ],
             "flags": {},
             "order": 42,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -3736,7 +3736,7 @@
               70
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [
               {
@@ -4080,7 +4080,7 @@
               60
             ],
             "flags": {},
-            "order": 19,
+            "order": 18,
             "mode": 0,
             "inputs": [
               {
@@ -4164,7 +4164,7 @@
               90
             ],
             "flags": {},
-            "order": 1,
+            "order": 20,
             "mode": 0,
             "inputs": [
               {
@@ -5248,10 +5248,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.7339324142857148,
+      "scale": 0.6672112857142861,
       "offset": [
-        657.8740114903572,
-        -245.0023429926959
+        841.8525923802129,
+        -263.6106283135014
       ]
     }
   },
