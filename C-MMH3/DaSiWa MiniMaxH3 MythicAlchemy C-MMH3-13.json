@@ -2,7 +2,7 @@
   "id": "e5579661-a3a5-4d30-97a8-4970090b54bf",
   "revision": 0,
   "last_node_id": 2737,
-  "last_link_id": 5985,
+  "last_link_id": 5987,
   "nodes": [
     {
       "id": 2,
@@ -385,6 +385,66 @@
       "bgcolor": "#653"
     },
     {
+      "id": 2737,
+      "type": "ModelPreviewOverrideKJ",
+      "pos": [
+        140,
+        470
+      ],
+      "size": [
+        650,
+        1510
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 5984
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5985
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelPreviewOverrideKJ"
+      },
+      "widgets_values": [
+        1024,
+        80,
+        true,
+        1,
+        12,
+        "taeh3.safetensors",
+        ""
+      ],
+      "widgets_values_named": {
+        "max_resolution": 1024,
+        "jpeg_quality": 80,
+        "suppress_default_preview": true,
+        "preview_frames": 1,
+        "preview_fps": 12,
+        "tiny_vae": "taeh3.safetensors",
+        "preview": ""
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
       "id": 2568,
       "type": "DaSiWa_EnhancedVideoCombine",
       "pos": [
@@ -393,7 +453,7 @@
       ],
       "size": [
         610,
-        850
+        1242.0833333333335
       ],
       "flags": {
         "collapsed": false
@@ -444,7 +504,7 @@
         28,
         "Standard",
         true,
-        true,
+        false,
         "video/%date:yyyy-MM-dd%/%date:hhmmss%",
         true,
         false,
@@ -463,7 +523,7 @@
         "quality": 28,
         "log_level": "Standard",
         "pingpong": true,
-        "save_metadata": true,
+        "save_metadata": false,
         "filename_prefix": "video/%date:yyyy-MM-dd%/%date:hhmmss%",
         "save_output": true,
         "pass_frames": false,
@@ -476,6 +536,195 @@
       }
     },
     {
+      "id": 2678,
+      "type": "DaSiWa_LTX2LoraLoader",
+      "pos": [
+        -420,
+        1190
+      ],
+      "size": [
+        550,
+        260
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 5963
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 5838
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5964
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            5839
+          ]
+        }
+      ],
+      "properties": {
+        "stack_data": "[{\"on\":true,\"lora\":\"None\",\"str\":-4.95,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1}]",
+        "theme": "a",
+        "model_type": "Basic"
+      },
+      "widgets_values": [
+        "[{\"on\":true,\"lora\":\"None\",\"str\":-4.95,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1}]",
+        "Basic"
+      ],
+      "widgets_values_named": {
+        "stack_data": "[{\"on\":true,\"lora\":\"None\",\"str\":-4.95,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1}]",
+        "model_type": "Basic"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2730,
+      "type": "MiniMaxH3Director",
+      "pos": [
+        800,
+        470
+      ],
+      "size": [
+        1350,
+        1510
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "fl2va_model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 5958
+        },
+        {
+          "name": "ref2va_model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 5959
+        },
+        {
+          "name": "external_width_overwrite",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "external_height_overwrite",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "external_prompt_overwrite",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "guide",
+          "type": "MINIMAX_H3_DIRECTOR_GUIDE",
+          "links": [
+            5960
+          ]
+        },
+        {
+          "name": "duration",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "positive_prompt",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            5963
+          ]
+        },
+        {
+          "name": "fl2va_requested",
+          "type": "BOOLEAN",
+          "links": [
+            5968
+          ]
+        },
+        {
+          "name": "ref2va_requested",
+          "type": "BOOLEAN",
+          "links": []
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "links": [
+            5962
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiniMaxH3Director"
+      },
+      "widgets_values": [
+        "I2VA",
+        "",
+        1024,
+        768,
+        5,
+        24,
+        "match",
+        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
+        "{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        ""
+      ],
+      "widgets_values_named": {
+        "mode": "I2VA",
+        "prompt": "",
+        "width": 1024,
+        "height": 768,
+        "duration": 5,
+        "frame_rate": 24,
+        "ref_image_size": "match",
+        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
+        "builder_state": "{\"version\":1,\"mode\":\"I2VA\",\"imd\":\"\",\"soundscape\":\"\",\"music\":\"\",\"duration\":5,\"ref\":{\"subject_defs\":[],\"summary_types\":[\"reference generation\"],\"summary_text\":\"\",\"retention\":[],\"style_line\":\"\",\"detail\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        "minimax_h3_director_ui": ""
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
       "id": 1512,
       "type": "e0940f57-80b2-480e-8a38-36968dc1763d",
       "pos": [
@@ -484,7 +733,7 @@
       ],
       "size": [
         550,
-        640
+        654
       ],
       "flags": {
         "collapsed": false
@@ -492,11 +741,6 @@
       "order": 13,
       "mode": 0,
       "inputs": [
-        {
-          "name": "noise_seed",
-          "type": "INT",
-          "link": null
-        },
         {
           "label": "➿ Frame Interpolation ",
           "name": "enabled_2",
@@ -756,6 +1000,7 @@
         "res_multistep",
         "simple",
         25,
+        1,
         10,
         5,
         false,
@@ -778,6 +1023,7 @@
         "sampler_name": "res_multistep",
         "scheduler": "simple",
         "steps": 25,
+        "noise_seed": 1,
         "shift_video": 10,
         "shift_audio": 5,
         "enabled_2": false,
@@ -795,255 +1041,6 @@
         "clip_name": "qwen3vl_32b_minimax_h3_int4_convrot.safetensors",
         "vae_name": "MiniMaxH3/minimax_h3_video_vae_fp16.safetensors",
         "vae_name_1": "MiniMaxH3/minimax_h3_audio_vae_fp32.safetensors"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2737,
-      "type": "ModelPreviewOverrideKJ",
-      "pos": [
-        140,
-        470
-      ],
-      "size": [
-        650,
-        1510
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 5984
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            5985
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ModelPreviewOverrideKJ"
-      },
-      "widgets_values": [
-        1024,
-        80,
-        true,
-        1,
-        12,
-        "taeh3.safetensors",
-        ""
-      ],
-      "widgets_values_named": {
-        "max_resolution": 1024,
-        "jpeg_quality": 80,
-        "suppress_default_preview": true,
-        "preview_frames": 1,
-        "preview_fps": 12,
-        "tiny_vae": "taeh3.safetensors",
-        "preview": ""
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2678,
-      "type": "DaSiWa_LTX2LoraLoader",
-      "pos": [
-        -420,
-        1150
-      ],
-      "size": [
-        550,
-        260
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 5963
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 5838
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            5964
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            5839
-          ]
-        }
-      ],
-      "properties": {
-        "stack_data": "[{\"on\":true,\"lora\":\"None\",\"str\":-4.95,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1}]",
-        "theme": "a",
-        "model_type": "Basic"
-      },
-      "widgets_values": [
-        "[{\"on\":true,\"lora\":\"None\",\"str\":-4.95,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1}]",
-        "Basic"
-      ],
-      "widgets_values_named": {
-        "stack_data": "[{\"on\":true,\"lora\":\"None\",\"str\":-4.95,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1},{\"on\":true,\"lora\":\"None\",\"str\":1,\"vs\":1,\"as\":1}]",
-        "model_type": "Basic"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 2730,
-      "type": "MiniMaxH3Director",
-      "pos": [
-        800,
-        470
-      ],
-      "size": [
-        1350,
-        1510
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "fl2va_model",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 5958
-        },
-        {
-          "name": "ref2va_model",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 5959
-        },
-        {
-          "name": "external_width_overwrite",
-          "shape": 7,
-          "type": "INT",
-          "link": null
-        },
-        {
-          "name": "external_height_overwrite",
-          "shape": 7,
-          "type": "INT",
-          "link": null
-        },
-        {
-          "name": "external_prompt_overwrite",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "guide",
-          "type": "MINIMAX_H3_DIRECTOR_GUIDE",
-          "links": [
-            5960
-          ]
-        },
-        {
-          "name": "duration",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "positive_prompt",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            5963
-          ]
-        },
-        {
-          "name": "fl2va_requested",
-          "type": "BOOLEAN",
-          "links": [
-            5968
-          ]
-        },
-        {
-          "name": "ref2va_requested",
-          "type": "BOOLEAN",
-          "links": []
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "links": [
-            5962
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "MiniMaxH3Director"
-      },
-      "widgets_values": [
-        "I2VA",
-        "",
-        1024,
-        768,
-        5,
-        24,
-        "match",
-        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
-        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
-        ""
-      ],
-      "widgets_values_named": {
-        "mode": "I2VA",
-        "prompt": "",
-        "width": 1024,
-        "height": 768,
-        "duration": 5,
-        "frame_rate": 24,
-        "ref_image_size": "match",
-        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768,\"custom_mode\":\"fixed\"}}",
-        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
-        "minimax_h3_director_ui": ""
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
@@ -1079,7 +1076,7 @@
       2678,
       1,
       1512,
-      15,
+      14,
       "CLIP"
     ],
     [
@@ -1111,7 +1108,7 @@
       2730,
       0,
       1512,
-      16,
+      15,
       "MINIMAX_H3_DIRECTOR_GUIDE"
     ],
     [
@@ -1119,7 +1116,7 @@
       2730,
       8,
       1512,
-      18,
+      17,
       "FLOAT"
     ],
     [
@@ -1135,7 +1132,7 @@
       2678,
       0,
       1512,
-      17,
+      16,
       "MODEL"
     ],
     [
@@ -1143,7 +1140,7 @@
       2730,
       6,
       1512,
-      14,
+      13,
       "BOOLEAN"
     ],
     [
@@ -1159,7 +1156,7 @@
       2737,
       0,
       1512,
-      19,
+      18,
       "MODEL"
     ]
   ],
@@ -1209,7 +1206,7 @@
         "state": {
           "lastGroupId": 191,
           "lastNodeId": 2737,
-          "lastLinkId": 5985,
+          "lastLinkId": 5987,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -1276,7 +1273,9 @@
             "id": "78f4e8f3-b089-407f-9a9a-25b277cf45c9",
             "name": "noise_seed",
             "type": "INT",
-            "linkIds": [],
+            "linkIds": [
+              5987
+            ],
             "pos": [
               -1040.9415893554688,
               3074
@@ -2104,9 +2103,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 2586,
@@ -3138,46 +3135,6 @@
             }
           },
           {
-            "id": 2600,
-            "type": "RandomNoise",
-            "pos": [
-              3410,
-              3790
-            ],
-            "size": [
-              360,
-              90
-            ],
-            "flags": {},
-            "order": 1,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-              {
-                "localized_name": "NOISE",
-                "name": "NOISE",
-                "type": "NOISE",
-                "links": [
-                  5594,
-                  5829
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "RandomNoise"
-            },
-            "widgets_values": [
-              1,
-              "fixed"
-            ],
-            "widgets_values_named": {
-              "noise_seed": 1,
-              "control_after_generate": "fixed"
-            },
-            "color": "#233",
-            "bgcolor": "#355"
-          },
-          {
             "id": 2719,
             "type": "PathchComfyKitchenAttentionDaSiWa",
             "pos": [
@@ -4194,6 +4151,56 @@
             "properties": {
               "Node name for S&R": "BasicGuider"
             }
+          },
+          {
+            "id": 2600,
+            "type": "RandomNoise",
+            "pos": [
+              3410,
+              3790
+            ],
+            "size": [
+              360,
+              90
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "noise_seed",
+                "name": "noise_seed",
+                "type": "INT",
+                "widget": {
+                  "name": "noise_seed"
+                },
+                "link": 5987
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "NOISE",
+                "name": "NOISE",
+                "type": "NOISE",
+                "links": [
+                  5594,
+                  5829
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "RandomNoise"
+            },
+            "widgets_values": [
+              1,
+              "randomize"
+            ],
+            "widgets_values_named": {
+              "noise_seed": 1,
+              "control_after_generate": "randomize"
+            },
+            "color": "#233",
+            "bgcolor": "#355"
           }
         ],
         "groups": [
@@ -5198,6 +5205,14 @@
             "target_id": 2667,
             "target_slot": 0,
             "type": "MODEL"
+          },
+          {
+            "id": 5987,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 2600,
+            "target_slot": 0,
+            "type": "INT"
           }
         ],
         "extra": {
@@ -5235,8 +5250,8 @@
     "ds": {
       "scale": 0.7339324142857148,
       "offset": [
-        465.66342318350564,
-        -174.0514813641198
+        657.8740114903572,
+        -245.0023429926959
       ]
     }
   },
