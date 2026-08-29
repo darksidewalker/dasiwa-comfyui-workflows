@@ -4537,84 +4537,6 @@
             }
           },
           {
-            "id": 2747,
-            "type": "MinimaxH3LatentUpscaler3D",
-            "pos": [
-              4830,
-              3100
-            ],
-            "size": [
-              450,
-              230
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 53,
-            "mode": 4,
-            "inputs": [
-              {
-                "localized_name": "latent",
-                "name": "latent",
-                "type": "*",
-                "link": 6002
-              },
-              {
-                "label": "upscale model",
-                "localized_name": "model_name",
-                "name": "model_name",
-                "type": "COMBO",
-                "widget": {
-                  "name": "model_name"
-                },
-                "link": 6017
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "latent",
-                "name": "latent",
-                "type": "*",
-                "links": [
-                  6003,
-                  6013
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "MinimaxH3LatentUpscaler3D",
-              "ue_properties": {
-                "widget_ue_connectable": {
-                  "mode": true
-                },
-                "input_ue_unconnectable": {},
-                "version": "7.8"
-              }
-            },
-            "widgets_values": [
-              "minimax_h3_latent_upscaler_3d_bf16.safetensors",
-              "scale by multiplier",
-              2,
-              32,
-              true,
-              "cuda",
-              "bf16",
-              "fp16"
-            ],
-            "widgets_values_named": {
-              "model_name": "minimax_h3_latent_upscaler_3d_bf16.safetensors",
-              "mode": "scale by multiplier",
-              "mode.scale": 2,
-              "align": 32,
-              "enable_temporal_chunking": true,
-              "force_unload": "cuda",
-              "device": "bf16",
-              "precision": "fp16"
-            },
-            "color": "#332922",
-            "bgcolor": "#593930"
-          },
-          {
             "id": 2701,
             "type": "MiniMaxH3DirectorGuide",
             "pos": [
@@ -5335,6 +5257,84 @@
                 "links": [
                   6000,
                   6010
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "MinimaxH3LatentUpscaler3D",
+              "ue_properties": {
+                "widget_ue_connectable": {
+                  "mode": true
+                },
+                "input_ue_unconnectable": {},
+                "version": "7.8"
+              }
+            },
+            "widgets_values": [
+              "minimax_h3_latent_upscaler_3d_bf16.safetensors",
+              "scale by multiplier",
+              2,
+              32,
+              true,
+              "cuda",
+              "cuda",
+              "fp16"
+            ],
+            "widgets_values_named": {
+              "model_name": "minimax_h3_latent_upscaler_3d_bf16.safetensors",
+              "mode": "scale by multiplier",
+              "mode.scale": 2,
+              "align": 32,
+              "enable_temporal_chunking": true,
+              "force_unload": "cuda",
+              "device": "cuda",
+              "precision": "fp16"
+            },
+            "color": "#332922",
+            "bgcolor": "#593930"
+          },
+          {
+            "id": 2747,
+            "type": "MinimaxH3LatentUpscaler3D",
+            "pos": [
+              4830,
+              3100
+            ],
+            "size": [
+              450,
+              230
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 53,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "latent",
+                "name": "latent",
+                "type": "*",
+                "link": 6002
+              },
+              {
+                "label": "upscale model",
+                "localized_name": "model_name",
+                "name": "model_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "model_name"
+                },
+                "link": 6017
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "latent",
+                "name": "latent",
+                "type": "*",
+                "links": [
+                  6003,
+                  6013
                 ]
               }
             ],
@@ -6629,10 +6629,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.6748007671143396,
+      "scale": 0.8846392696317656,
       "offset": [
-        1576.1894351345927,
-        -156.861504341128
+        -3744.099321694309,
+        -2747.3318068234857
       ]
     }
   },
