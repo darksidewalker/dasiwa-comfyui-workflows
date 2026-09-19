@@ -12,7 +12,7 @@
         340
       ],
       "size": [
-        380,
+        379.0283203125,
         50
       ],
       "flags": {
@@ -46,8 +46,8 @@
         280
       ],
       "size": [
-        1040,
-        70
+        1036.41357421875,
+        65
       ],
       "flags": {
         "pinned": true,
@@ -80,8 +80,8 @@
         240
       ],
       "size": [
-        620,
-        30
+        611.760986328125,
+        24
       ],
       "flags": {
         "pinned": true,
@@ -1087,13 +1087,13 @@
         "Node name for S&R": "DaSiWa_SeedControl"
       },
       "widgets_values": [
-        5768068666680507000,
-        "{\"mode\":\"random\",\"last_seed\":\"5768068666680507803\",\"recent\":[\"5768068666680507803\",\"8706821914078016083\",\"5772251897178917731\",\"15534863472137656405\",\"13904926658995056972\",\"13849697112652572341\",\"18350669610537000429\",\"9139919601687157345\",\"16187540403854914337\",\"6100560381180476175\"]}",
+        10934723327698123000,
+        "{\"mode\":\"random\",\"last_seed\":\"10934723327698123178\",\"recent\":[\"10934723327698123178\",\"5768068666680507803\",\"8706821914078016083\",\"5772251897178917731\",\"15534863472137656405\",\"13904926658995056972\",\"13849697112652572341\",\"18350669610537000429\",\"9139919601687157345\",\"16187540403854914337\"]}",
         ""
       ],
       "widgets_values_named": {
-        "seed_value": 5768068666680507000,
-        "seed_control_state": "{\"mode\":\"random\",\"last_seed\":\"5768068666680507803\",\"recent\":[\"5768068666680507803\",\"8706821914078016083\",\"5772251897178917731\",\"15534863472137656405\",\"13904926658995056972\",\"13849697112652572341\",\"18350669610537000429\",\"9139919601687157345\",\"16187540403854914337\",\"6100560381180476175\"]}",
+        "seed_value": 10934723327698123000,
+        "seed_control_state": "{\"mode\":\"random\",\"last_seed\":\"10934723327698123178\",\"recent\":[\"10934723327698123178\",\"5768068666680507803\",\"8706821914078016083\",\"5772251897178917731\",\"15534863472137656405\",\"13904926658995056972\",\"13849697112652572341\",\"18350669610537000429\",\"9139919601687157345\",\"16187540403854914337\"]}",
         "dasiwa_seed_control_ui": ""
       },
       "color": "#2a363b",
@@ -1311,8 +1311,8 @@
         768,
         5,
         "match",
-        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"prompt_mode\":\"simple\",\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\"},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":600.8515625,\"ref_detailed_description\":208.5},\"refmods\":[{\"slot\":1,\"name\":\"minimaxh3_anjarubik_v1_refmod\",\"description\":\"RefMod dataset anjarubik\",\"strength\":1,\"enabled\":true,\"media_type\":\"video\"},{\"slot\":2,\"name\":\"\",\"description\":\"RefMod dataset anjarubik\",\"strength\":1,\"enabled\":false}]}",
-        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"prompt_mode\":\"simple\",\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\"}",
+        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":600.8515625,\"ref_detailed_description\":208.5},\"refmods\":[]}",
+        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
         24,
         ""
       ],
@@ -1323,8 +1323,8 @@
         "height": 768,
         "duration": 5,
         "ref_image_size": "match",
-        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"prompt_mode\":\"simple\",\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\"},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":600.8515625,\"ref_detailed_description\":208.5},\"refmods\":[{\"slot\":1,\"name\":\"minimaxh3_anjarubik_v1_refmod\",\"description\":\"RefMod dataset anjarubik\",\"strength\":1,\"enabled\":true,\"media_type\":\"video\"},{\"slot\":2,\"name\":\"\",\"description\":\"RefMod dataset anjarubik\",\"strength\":1,\"enabled\":false}]}",
-        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"prompt_mode\":\"simple\",\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\"}",
+        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":1,\"custom_width\":1344,\"custom_height\":768},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":600.8515625,\"ref_detailed_description\":208.5},\"refmods\":[]}",
+        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
         "frame_rate": 24,
         "minimax_h3_director_ui": ""
       },
@@ -5907,10 +5907,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 1.6105100000000008,
+      "scale": 0.6830134553650707,
       "offset": [
-        926.6065783045417,
-        -1027.9749505295727
+        969.6887229226213,
+        -315.9924526371
       ]
     }
   },
