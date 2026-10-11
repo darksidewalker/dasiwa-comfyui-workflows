@@ -988,13 +988,13 @@
         "Node name for S&R": "DaSiWa_SeedControl"
       },
       "widgets_values": [
-        10692305977776191000,
-        "{\"mode\":\"random\",\"last_seed\":\"10692305977776190887\",\"recent\":[\"10692305977776190887\",\"13083858638355460498\",\"15150890465947993888\",\"2009637864198570946\",\"9941078961442708585\",\"15475673862362826013\",\"1373655449285596658\",\"16242992547149887438\",\"13861091875805570926\",\"12366726474521086409\"]}",
+        364309173376484700,
+        "{\"mode\":\"random\",\"last_seed\":\"364309173376484648\",\"recent\":[\"364309173376484648\",\"10692305977776190887\",\"13083858638355460498\",\"15150890465947993888\",\"2009637864198570946\",\"9941078961442708585\",\"15475673862362826013\",\"1373655449285596658\",\"16242992547149887438\",\"13861091875805570926\"]}",
         ""
       ],
       "widgets_values_named": {
-        "seed_value": 10692305977776191000,
-        "seed_control_state": "{\"mode\":\"random\",\"last_seed\":\"10692305977776190887\",\"recent\":[\"10692305977776190887\",\"13083858638355460498\",\"15150890465947993888\",\"2009637864198570946\",\"9941078961442708585\",\"15475673862362826013\",\"1373655449285596658\",\"16242992547149887438\",\"13861091875805570926\",\"12366726474521086409\"]}",
+        "seed_value": 364309173376484700,
+        "seed_control_state": "{\"mode\":\"random\",\"last_seed\":\"364309173376484648\",\"recent\":[\"364309173376484648\",\"10692305977776190887\",\"13083858638355460498\",\"15150890465947993888\",\"2009637864198570946\",\"9941078961442708585\",\"15475673862362826013\",\"1373655449285596658\",\"16242992547149887438\",\"13861091875805570926\"]}",
         "dasiwa_seed_control_ui": ""
       },
       "color": "#2a363b",
@@ -1217,8 +1217,8 @@
         768,
         5,
         "match",
-        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":0.4,\"custom_width\":1088,\"custom_height\":1984,\"custom_mode\":\"fixed\"},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":572.83984375,\"ref_detailed_description\":208.5},\"refmods\":[{\"slot\":1,\"name\":\"\",\"description\":\"\",\"strength\":1,\"enabled\":false}],\"continuity\":{\"version\":3,\"source_kind\":\"checkpoint\",\"source_id\":\"\",\"source_video_id\":\"\",\"source_video\":null,\"use_references\":false,\"operation\":\"new\",\"capture\":false,\"session\":\"h3_998cd12a79e31d10ce2ae7e18eb03501\",\"overlap_frames\":22,\"continuation_prompt\":\"\",\"idea\":\"\"}}",
-        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"prompt_mode\":\"simple\"},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":0.4,\"custom_width\":1088,\"custom_height\":1984,\"custom_mode\":\"fixed\"},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":572.83984375,\"ref_detailed_description\":208.5},\"refmods\":[{\"slot\":1,\"name\":\"\",\"description\":\"\",\"strength\":1,\"enabled\":false}],\"continuity\":{\"version\":3,\"source_kind\":\"checkpoint\",\"source_id\":\"\",\"source_video_id\":\"\",\"source_video\":null,\"use_references\":false,\"operation\":\"new\",\"capture\":false,\"session\":\"h3_998cd12a79e31d10ce2ae7e18eb03501\",\"overlap_frames\":22,\"continuation_prompt\":\"\",\"idea\":\"\"}}",
+        "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"prompt_mode\":\"simple\"}",
         24,
         ""
       ],
@@ -1229,8 +1229,8 @@
         "height": 768,
         "duration": 5,
         "ref_image_size": "match",
-        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":0.4,\"custom_width\":1088,\"custom_height\":1984,\"custom_mode\":\"fixed\"},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":572.83984375,\"ref_detailed_description\":208.5},\"refmods\":[{\"slot\":1,\"name\":\"\",\"description\":\"\",\"strength\":1,\"enabled\":false}],\"continuity\":{\"version\":3,\"source_kind\":\"checkpoint\",\"source_id\":\"\",\"source_video_id\":\"\",\"source_video\":null,\"use_references\":false,\"operation\":\"new\",\"capture\":false,\"session\":\"h3_998cd12a79e31d10ce2ae7e18eb03501\",\"overlap_frames\":22,\"continuation_prompt\":\"\",\"idea\":\"\"}}",
-        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"}}",
+        "timeline_data": "{\"version\":1,\"items\":[],\"prompt_blocks\":[],\"builder_state\":{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"prompt_mode\":\"simple\"},\"resolution\":{\"aspect\":\"auto\",\"resolution\":\"auto\",\"input_scaling\":\"Auto\",\"custom_aspect_w\":16,\"custom_aspect_h\":9,\"custom_mp\":0.4,\"custom_width\":1088,\"custom_height\":1984,\"custom_mode\":\"fixed\"},\"resolved_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"field_heights\":{\"simple_prompt\":572.83984375,\"ref_detailed_description\":208.5},\"refmods\":[{\"slot\":1,\"name\":\"\",\"description\":\"\",\"strength\":1,\"enabled\":false}],\"continuity\":{\"version\":3,\"source_kind\":\"checkpoint\",\"source_id\":\"\",\"source_video_id\":\"\",\"source_video\":null,\"use_references\":false,\"operation\":\"new\",\"capture\":false,\"session\":\"h3_998cd12a79e31d10ce2ae7e18eb03501\",\"overlap_frames\":22,\"continuation_prompt\":\"\",\"idea\":\"\"}}",
+        "builder_state": "{\"version\":2,\"mode\":\"REF2VA\",\"duration\":5,\"ref\":{\"subject_definitions\":\"\",\"summary\":\"\",\"retention_analysis\":\"\",\"detailed_description\":\"\",\"soundscape\":\"\",\"music\":\"\"},\"simple_prompt\":\"subject_definitions:\\n\\n\\nsummary:\\n\\n\\nretention_analysis:\\n\\n\\ndetailed_description:\\n\\n\\noverall_soundscape:\\n\\n\\nnon_diegetic_music:\\nN/A\",\"prompt_mode\":\"simple\"}",
         "frame_rate": 24,
         "minimax_h3_director_ui": ""
       },
@@ -4246,9 +4246,9 @@
               }
             },
             "widgets_values": [
-              true,
+              false,
               "Ultra",
-              true,
+              false,
               "Ultra",
               "VSR",
               "Ultra",
@@ -4281,9 +4281,9 @@
               true
             ],
             "widgets_values_named": {
-              "denoise": true,
+              "denoise": false,
               "denoise_quality": "Ultra",
-              "deblur": true,
+              "deblur": false,
               "deblur_quality": "Ultra",
               "upscale": "VSR",
               "upscale_quality": "Ultra",
@@ -5750,10 +5750,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.6830134553650705,
+      "scale": 0.9876597957769864,
       "offset": [
-        1085.4497202759055,
-        -446.78325793095723
+        -5902.115388644315,
+        -2511.791069007815
       ]
     }
   },
